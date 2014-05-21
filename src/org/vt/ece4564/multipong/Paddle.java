@@ -1,11 +1,9 @@
 package org.vt.ece4564.multipong;
 
 import android.graphics.Rect;
-import android.util.Log;
 
 public class Paddle {
 	private Rect paddle_;
-	private final String TAG = "Paddle";
 	private int width_ = 0;
 	private int height_ = 0;
 	

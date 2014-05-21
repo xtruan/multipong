@@ -11,14 +11,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
-import android.view.inputmethod.EditorInfo;
+import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -253,31 +251,6 @@ public class HomeActivity extends Activity {
 	 * 
 	 * @param message
 	 *            A string of text to send.
-	 */
-	/*
-	 * public void sendMessage(String message) { // Check that we're actually
-	 * connected before trying anything if (mChatService.getState() !=
-	 * BluetoothChatService.STATE_CONNECTED) { Toast.makeText(this,
-	 * R.string.not_connected, Toast.LENGTH_SHORT) .show(); return; }
-	 * 
-	 * // Check that there's actually something to send if (message.length() >
-	 * 0) { // Get the message bytes and tell the BluetoothChatService to write
-	 * byte[] send = message.getBytes(); mChatService.write(send);
-	 * 
-	 * // Reset out string buffer to zero and clear the edit text field
-	 * mOutStringBuffer.setLength(0); mOutEditText.setText(mOutStringBuffer); }
-	 * }
-	 */
-	/*
-	 * // The action listener for the EditText widget, to listen for the return
-	 * key private TextView.OnEditorActionListener mWriteListener = new
-	 * TextView.OnEditorActionListener() { public boolean
-	 * onEditorAction(TextView view, int actionId, KeyEvent event) { // If the
-	 * action is a key-up event on the return key, send the // message if
-	 * (actionId == EditorInfo.IME_NULL && event.getAction() ==
-	 * KeyEvent.ACTION_UP) { String message = view.getText().toString();
-	 * sendMessage(message); } if (D) Log.i(TAG, "END onEditorAction"); return
-	 * true; } };
 	 */
 	// The Handler that gets information back from the BluetoothChatService
 	private final Handler mHandler = new Handler() {

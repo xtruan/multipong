@@ -18,11 +18,6 @@ package org.vt.ece4564.multipong;
 
 import java.util.Set;
 
-import org.vt.ece4564.multipong.R;
-import org.vt.ece4564.multipong.R.id;
-import org.vt.ece4564.multipong.R.layout;
-import org.vt.ece4564.multipong.R.string;
-
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -33,14 +28,14 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.Window;
 import android.view.View.OnClickListener;
+import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
 
 /**
  * This Activity appears as a dialog. It lists any paired devices and

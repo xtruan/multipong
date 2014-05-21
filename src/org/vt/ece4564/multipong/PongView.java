@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.view.Display;
 import android.view.View;
 
 public class PongView extends View {
@@ -26,7 +25,7 @@ public class PongView extends View {
 	private int my_points_ = 0; // debug;
 	private int op_points_ = 0;
 
-	class RefreshHandler extends Handler {
+	private class RefreshHandler extends Handler {
 		@Override
 		public void handleMessage(Message msg) {
 			if (initialized_)

@@ -1,29 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="org.vt.ece4564.multipong" android:versionCode="1"
-	android:versionName="1.0">
-	<application android:icon="@drawable/icon" android:label="@string/app_name"
-		android:debuggable="true">
+<manifest package="org.vt.ece4564.multipong"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android">
 
+        <uses-sdk android:minSdkVersion="5"/>
+    
+    <uses-permission android:name="android.permission.BLUETOOTH" >
+    </uses-permission>
+    
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
 
-		<activity android:label="@string/app_name" android:name="HomeActivity"
-			android:screenOrientation="landscape">
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN"></action>
-				<category android:name="android.intent.category.LAUNCHER"></category>
-			</intent-filter>
-		</activity>
-		<activity android:name="GameActivity"
-			android:screenOrientation="landscape"></activity>
-		<activity android:name="DeviceListActivity" android:theme="@android:style/Theme.Dialog"
-			android:screenOrientation="landscape"></activity>
-	<activity android:name="ScoresActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.Dialog"></activity>
-</application>
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
 
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="GameActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="DeviceListActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="ScoresActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+    </application>
 
-
-	<uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
-	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
-<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-</manifest> 
+</manifest>

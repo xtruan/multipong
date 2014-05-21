@@ -1,13 +1,9 @@
 package org.vt.ece4564.multipong;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -15,9 +11,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.PowerManager;
 import android.util.Log;
-import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 public class GameActivity extends HomeActivity implements AccelerometerListener {
 	private PowerManager.WakeLock wl;

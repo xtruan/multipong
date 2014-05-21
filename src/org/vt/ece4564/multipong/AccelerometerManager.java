@@ -59,7 +59,7 @@ public class AccelerometerManager {
                         getSystemService(Context.SENSOR_SERVICE);
                 List<Sensor> sensors = sensorManager.getSensorList(
                         Sensor.TYPE_ACCELEROMETER);
-                supported = new Boolean(sensors.size() > 0);
+                supported = Boolean.valueOf(sensors.size() > 0);
             } else {
                 supported = Boolean.FALSE;
             }

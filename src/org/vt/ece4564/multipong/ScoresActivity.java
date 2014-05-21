@@ -3,15 +3,10 @@ package org.vt.ece4564.multipong;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import android.app.ListActivity;
-import android.content.Context;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
@@ -19,7 +14,6 @@ import android.widget.ArrayAdapter;
 
 public class ScoresActivity extends ListActivity {
 
-	private final String FILE = "scores.txt";
 	private final String TAG = "ScoresActivity";
 	
 	//TODO: change to ArrayList
