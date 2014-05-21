@@ -64,7 +64,7 @@ public class HomeActivity extends Activity {
 	// Member object for the chat services
 	protected static BluetoothChatService mChatService = null;
 
-	private Button setupButton_, scoresButton_;
+	private Button scoresButton_;
 	protected static String readMessage_ = "0";
 	protected static boolean server_ = false;
 	protected static boolean gameFlag_ = false;
