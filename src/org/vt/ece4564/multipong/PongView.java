@@ -213,7 +213,7 @@ public class PongView extends View {
 	public void setBall(int x) {
 	//ball_.collideY();
 	//ball_.collideX();
-	ball_.setBall(x,15,5,5);
+	ball_.setBall(x,15,5,-5);
 	ball_.jesus();
 
 	}
